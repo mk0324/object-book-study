@@ -14,8 +14,12 @@ public class TicketOffice {
         this.tickets.addAll(Arrays.asList(tickets));
     }
 
+    public void sellTicketTo(Audience audience) {
+        plusAmount(audience.buy(getTicket()));
+    }
+
     // TicketOffice 의 관점에서 교환해준다는 의미가 명확하지 않음
-    public Ticket getTicket() {
+    private Ticket getTicket() {
         return tickets.remove(0);
     }
 
@@ -23,7 +27,7 @@ public class TicketOffice {
         this.amount -= amount;
     }
 
-    public void plusAmount(Long amount) {
+    private void plusAmount(Long amount) {
         this.amount += amount;
     }
 }
