@@ -15,7 +15,7 @@ public class TicketOffice {
     }
 
     // TicketOffice 의 관점에서 교환해준다는 의미가 명확하지 않음
-    public Ticket getTickets() {
+    public Ticket getTicket() {
         return tickets.remove(0);
     }
 
