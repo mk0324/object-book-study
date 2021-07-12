@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.ticket;
 
 public class Ticket {
 
